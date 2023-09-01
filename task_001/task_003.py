@@ -6,7 +6,7 @@ a = int(input())
 while 0 > a or a > 100001:
     print("а должно быть больше нуля и меньше ста тысяч")
     a = int(input())
-if a == 2:
+if a == 2 or a == 1:
     print("Число простое")
 else:
     for i in range(3, int(a ** 0.5 + 1)):

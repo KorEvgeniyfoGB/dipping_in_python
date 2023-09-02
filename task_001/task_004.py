@@ -13,7 +13,7 @@ while a != num:
         print("Маловато будет")
         a = int(input())
         p += 1
-    elif p => 10:
+    elif p <= 10:
         print("Конец")
         break
 print("Угадал")

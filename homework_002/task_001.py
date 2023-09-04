@@ -8,4 +8,3 @@ while number > 0:
     hex_number = hex_list[number % 16] + hex_number
     number //= 16
 print(hex_number)
-print(hex(number))

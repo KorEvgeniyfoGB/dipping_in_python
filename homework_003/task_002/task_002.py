@@ -6,9 +6,10 @@ try:
     with open("text.txt", encoding="UTF-8") as f:
         a = f.read()
         b = {}
-        for i in set(a.lower().split()):
+        c = a.lower().split()
+        for i in set(c):
             if i not in "!\"#$%&\'()*+,-./:;<=>":
-                b[i] = a.lower().split().count(i)
+                b[i] = c.count(i)
         res = sorted(b.items(), key=lambda x: x[1], reverse=True)[:10]
         print([i[0] for i in res])
 except Exception as e:

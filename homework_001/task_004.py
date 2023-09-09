@@ -8,12 +8,14 @@ while a != num:
     if a > num:
         print("Дофига")
         a = int(input())
-        p += 1
+
     elif a < num:
         print("Маловато будет")
         a = int(input())
-        p += 1
-    elif p <= 10:
+    p += 1
+    if p == 9:
         print("Конец")
         break
-print("Угадал")
+
+else:
+    print("Угадал")

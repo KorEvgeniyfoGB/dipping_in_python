@@ -36,12 +36,12 @@
 # ✔Вместо чисел, кратных пяти — слово «Buzz». ✔Если число кратно и 3, и 5,
 # то программа должна выводить слово «FizzBuzz».
 # ✔*Превратите решение в генераторное выражение.
-gen = ("FizzBuzz" if i % 3 == 0 and i % 5 == 0 else "Fizz" if i % 3 == 0 else "Buzz" if i % 5 == 0 else i for i in
-       range(1, 101))
-
-print(*gen, sep="\n")
-
-for i in range (2, 10):
-    for j in range(1, 11):
-        print(f"{i} x {j} = {i * j}")
-    print("")
+# gen = ("FizzBuzz" if i % 3 == 0 and i % 5 == 0 else "Fizz" if i % 3 == 0 else "Buzz" if i % 5 == 0 else i for i in
+#        range(1, 101))
+#
+# print(*gen, sep="\n")
+#
+# for i in range (2, 10):
+#     for j in range(1, 11):
+#         print(f"{i} x {j} = {i * j}")
+#     print("")

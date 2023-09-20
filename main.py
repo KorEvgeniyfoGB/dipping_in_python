@@ -45,3 +45,45 @@
 #     for j in range(1, 11):
 #         print(f"{i} x {j} = {i * j}")
 #     print("")
+
+# days = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+# month, day = map(int, input().split())
+# fday = day + 1
+# fmonth = month
+# pday = day - 1
+# pmonth = month
+# if day in days:
+#     fmonth = month + 1
+#     fday = 1
+# elif day == 1:
+#     pday = days[month - 1]
+#     pmonth = month - 1
+# print(f"{pmonth:02}.{pday:02} {fmonth:02}.{fday:02}")
+
+# где N — количество строк в таблице, а M — количество столбцов в таблице.
+matrix = [[1, 0, 0, 0, 0, 0, 0, 0],
+          [0, 1, 0, 0, 0, 0, 0, 0],
+          [0, 0, 1, 0, 0, 0, 0, 0],
+          [0, 0, 0, 1, 0, 0, 0, 0],
+          [0, 0, 0, 0, 1, 0, 0, 0],
+          [0, 0, 0, 0, 0, 1, 0, 0],
+          [0, 0, 0, 0, 0, 0, 1, 0],
+          [0, 0, 0, 0, 0, 0, 0, 1]]
+N = 8
+M = 8
+diagonals0 = [[] for i in range(N + M - 1)]
+diagonals1 = [[] for i in range(N + M - 1)]
+for i in range(-(N - 1), M):
+    for j in range(N):
+        row, col = j, i + j
+        if 0 <= row < len(matrix) and 0 <= col < len(matrix[0]):
+            diagonals0[i + len(matrix) - 1].append(matrix[row][col])
+            diagonals1[i + len(matrix) - 1].append(matrix[row][M - col - 1])
+
+            #print(matrix[row][col])
+            # if 1 in matrix[row][col] and matrix[row][col].count(1):
+            #     break
+            #matrix[row][M - col - 1]
+diagonals0
+diagonals1
+

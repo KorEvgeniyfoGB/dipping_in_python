@@ -61,29 +61,94 @@
 # print(f"{pmonth:02}.{pday:02} {fmonth:02}.{fday:02}")
 
 # где N — количество строк в таблице, а M — количество столбцов в таблице.
-matrix = [[1, 0, 0, 0, 0, 0, 0, 0],
-          [0, 1, 0, 0, 0, 0, 0, 0],
-          [0, 0, 1, 0, 0, 0, 0, 0],
-          [0, 0, 0, 1, 0, 0, 0, 0],
-          [0, 0, 0, 0, 1, 0, 0, 0],
-          [0, 0, 0, 0, 0, 1, 0, 0],
-          [0, 0, 0, 0, 0, 0, 1, 0],
-          [0, 0, 0, 0, 0, 0, 0, 1]]
-N = 8
-M = 8
-diagonals0 = [[] for i in range(N + M - 1)]
-diagonals1 = [[] for i in range(N + M - 1)]
-for i in range(-(N - 1), M):
-    for j in range(N):
-        row, col = j, i + j
-        if 0 <= row < len(matrix) and 0 <= col < len(matrix[0]):
-            diagonals0[i + len(matrix) - 1].append(matrix[row][col])
-            diagonals1[i + len(matrix) - 1].append(matrix[row][M - col - 1])
+# matrix = [[1, 0, 0, 0, 0, 0, 0, 0],
+#           [0, 1, 0, 0, 0, 0, 0, 0],
+#           [0, 0, 1, 0, 0, 0, 0, 0],
+#           [0, 0, 0, 1, 0, 0, 0, 0],
+#           [0, 0, 0, 0, 1, 0, 0, 0],
+#           [0, 0, 0, 0, 0, 1, 0, 0],
+#           [0, 0, 0, 0, 0, 0, 1, 0],
+#           [0, 0, 0, 0, 0, 0, 0, 1]]
+# N = 8
+# M = 8
+# diagonals0 = [[] for i in range(N + M - 1)]
+# diagonals1 = [[] for i in range(N + M - 1)]
+# for i in range(-(N - 1), M):
+#     for j in range(N):
+#         row, col = j, i + j
+#         if 0 <= row < len(matrix) and 0 <= col < len(matrix[0]):
+#             diagonals0[i + len(matrix) - 1].append(matrix[row][col])
+#             diagonals1[i + len(matrix) - 1].append(matrix[row][M - col - 1])
+#
+#             #print(matrix[row][col])
+#             # if 1 in matrix[row][col] and matrix[row][col].count(1):
+#             #     break
+#             #matrix[row][M - col - 1]
+# diagonals0
+# diagonals1
 
-            #print(matrix[row][col])
-            # if 1 in matrix[row][col] and matrix[row][col].count(1):
-            #     break
-            #matrix[row][M - col - 1]
-diagonals0
-diagonals1
+# import csv
+#
+#
+# # Создаем список словарей
+# my_list = [{'name': 'John', 'age': 25, 'hobbies': ['reading', 'swimming', 'traveling']}, {'name': 'Alice', 'age': 30, 'hobbies': ['hiking', 'dancing', 'cooking']}]
+# # Открываем файл для записи
+# with open('my_file.csv', 'w', newline='') as file:
+# # Создаем объект DictWriter
+#     writer = csv.DictWriter(file, fieldnames=my_list[0].keys())
+# # Записываем заголовок
+#     writer.writeheader()
+# # Записываем данные
+#     for row in my_list:
+#         writer.writerow(row)
+# import os
+#
+#
+# def dir_size(path_to_dir):
+#     total_size = 0
+#     with os.scandir(path_to_dir) as it:
+#         for entry in it:
+#             if entry.is_file():
+#                 total_size += entry.stat().st_size
+#             elif entry.is_dir():
+#                 total_size += dir_size(entry.path)
+#     return total_size
+#
+#
+# def get_dict_directory(path_dir):
+#     lst_dir = list(os.walk(path_dir))
+#     data_list = []
+#     for parent_directory, directory, files in lst_dir:
+#         data_dict = {}
+#         data_dict[parent_directory] =[]
+#         for dir in directory:
+#             dir_dict = {}
+#             size_dir = dir_size(os.path.join(parent_directory, dir))
+#             dir_dict["name"] = dir
+#             dir_dict["what_is_it"] = "directory"
+#             dir_dict["size"] = size_dir
+#             data_dict[parent_directory].append(dir_dict)
+#         for file in files:
+#             file_dict = {}
+#             size_fie = os.path.getsize(os.path.join(parent_directory, file))
+#             file_dict["name"] = file
+#             file_dict["what_is_it"] = "file"
+#             file_dict["size"] = size_fie
+#             data_dict[parent_directory].append(file_dict)
+#         data_list.append(data_dict)
+#     return data_list
 
+# def get_dict_directory(path_dir):
+#     lst_dir = list(os.walk(path_dir))
+#     data_dict = {}
+#     for parent_directory, directory, files in lst_dir:
+#         data_dict[parent_directory] =[]
+#         for dir in directory:
+#             size_dir = dir_size(os.path.join(parent_directory, dir))
+#             a = dir + ", this is directory " + ",size: " + str(size_dir)
+#             data_dict[parent_directory].append(a)
+#         for file in files:
+#             size_fie = os.path.getsize(os.path.join(parent_directory, file))
+#             b = file + ", this is file " + ",size: " + str(size_fie)
+#             data_dict[parent_directory].append(b)
+#     return data_dict

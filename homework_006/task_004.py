@@ -3,12 +3,14 @@
 # Проверяйте различный случайные варианты и выведите 4 успешных расстановки
 from task_003 import *
 import random
+import time
 
 
 def get_rand_queens():
     return random.randint(0, 7), random.randint(0, 7)
 
 
+st = time.time()
 res = []
 while True:
     n = 8
@@ -19,4 +21,6 @@ while True:
         res.append(var)
     if len(res) == 4:
         break
+et = time.time()
 print(*res, sep="\n")
+print(et - st)

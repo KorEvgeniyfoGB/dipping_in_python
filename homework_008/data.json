@@ -1,0 +1,74 @@
+[
+    [
+        {
+            "root_directory": "C:\\Users\\Bagz_Banny\\PycharmProjects\\deeping_in_python\\homework_008",
+            "name": "это",
+            "what_is_it": "directory",
+            "size": 14
+        },
+        {
+            "root_directory": "C:\\Users\\Bagz_Banny\\PycharmProjects\\deeping_in_python\\homework_008",
+            "name": "data.csv",
+            "what_is_it": "file",
+            "size": 240
+        },
+        {
+            "root_directory": "C:\\Users\\Bagz_Banny\\PycharmProjects\\deeping_in_python\\homework_008",
+            "name": "data.json",
+            "what_is_it": "file",
+            "size": 2534
+        },
+        {
+            "root_directory": "C:\\Users\\Bagz_Banny\\PycharmProjects\\deeping_in_python\\homework_008",
+            "name": "data.pkl",
+            "what_is_it": "file",
+            "size": 629
+        },
+        {
+            "root_directory": "C:\\Users\\Bagz_Banny\\PycharmProjects\\deeping_in_python\\homework_008",
+            "name": "task_001.py",
+            "what_is_it": "file",
+            "size": 2817
+        },
+        {
+            "root_directory": "C:\\Users\\Bagz_Banny\\PycharmProjects\\deeping_in_python\\homework_008",
+            "name": "про.mp3",
+            "what_is_it": "file",
+            "size": 0
+        },
+        {
+            "root_directory": "C:\\Users\\Bagz_Banny\\PycharmProjects\\deeping_in_python\\homework_008",
+            "name": "то.jpg",
+            "what_is_it": "file",
+            "size": 0
+        }
+    ],
+    [
+        {
+            "root_directory": "C:\\Users\\Bagz_Banny\\PycharmProjects\\deeping_in_python\\homework_008\\это",
+            "name": "то",
+            "what_is_it": "directory",
+            "size": 0
+        },
+        {
+            "root_directory": "C:\\Users\\Bagz_Banny\\PycharmProjects\\deeping_in_python\\homework_008\\это",
+            "name": "то.png",
+            "what_is_it": "file",
+            "size": 0
+        },
+        {
+            "root_directory": "C:\\Users\\Bagz_Banny\\PycharmProjects\\deeping_in_python\\homework_008\\это",
+            "name": "что.txt",
+            "what_is_it": "file",
+            "size": 14
+        }
+    ],
+    [
+        {
+            "root_directory": "C:\\Users\\Bagz_Banny\\PycharmProjects\\deeping_in_python\\homework_008\\это\\то",
+            "name": "не это.mp4",
+            "what_is_it": "file",
+            "size": 0
+        }
+    ]
+]

@@ -152,3 +152,14 @@
 #             b = file + ", this is file " + ",size: " + str(size_fie)
 #             data_dict[parent_directory].append(b)
 #     return data_dict
+
+
+
+
+
+
+
+
+
+
+

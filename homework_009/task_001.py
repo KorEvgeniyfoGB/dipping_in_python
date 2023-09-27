@@ -48,14 +48,14 @@ def solve_quadratic_equation(a, b, c):
     return "no solutions"
 
 
-def get_3_num_in_csv(min_lim, max_lim, number_of_digits):
+def get_3_num_in_csv(min_lim, max_lim, number_of_digits, rows):
     res = []
-    for i in range(100):
+    for i in range(rows):
         res.append([round(random.uniform(min_lim, max_lim), number_of_digits) for i in range(3)])
     with open("a lot of num.csv", "w", newline="") as f:
         writer = csv.writer(f, delimiter=";")
         writer.writerows(res)
 
 
-get_3_num_in_csv(-100, 100, 3)
+get_3_num_in_csv(-100, 100, 3, 100)
 solve_quadratic_equation()

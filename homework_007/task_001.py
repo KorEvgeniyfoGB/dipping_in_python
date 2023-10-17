@@ -24,4 +24,4 @@ def get_new_name(new_name: str, number_of_digits=3, extension=".csv", old_name_r
             ind += 1
 
 
-get_new_name("sdd")
+get_new_name("sd")

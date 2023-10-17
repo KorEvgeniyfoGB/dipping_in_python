@@ -153,13 +153,96 @@
 #             data_dict[parent_directory].append(b)
 #     return data_dict
 
+# class Factorial:
+#     def __init__(self, limit: int):
+#         self.limit = limit
+#         self.storage = {}
+#
+#     def _fact(self, num: int):
+#         factorial = []
+#         number = 1
+#         for i in range(1, num + 1):
+#             number *= i
+#             factorial.append(number)
+#         return factorial
+#
+#     def __call__(self, number: int):
+#         result = self._fact(number)[-self.limit:]
+#         self.storage[number] = result
+#         return result
+#
+# class Factorial:
+#     def __init__(self, *args):
+#         self.start, self.stop, self.step = 1, 1, 1
+#         if args:
+#             args = list(map(int, args))
+#             match len(args):
+#                 case 1:
+#                     self.stop = args[0]
+#                 case 2:
+#                     self.start, self.stop = args
+#                 case 3:
+#                     self.start, self.stop, self.step = args
+#         self._value = self._fact()
+#
+#     def _fact(self):
+#         result = []
+#         number = 1
+#         for i in range(self.start, self.stop, self.step):
+#             number *= i
+#             result.append(number)
+#         return result
+#
+#     def __iter__(self):
+#         return self
+#
+#     def __next__(self):
+#         while self._value:
+#             return self._value.pop(0)
+#         raise StopIteration
+#
+#
+# a = Factorial(2,20,2)
+#
+# for i in a:
+#     print(i)
 
 
-
-
-
-
-
-
-
+#
+# class Value:
+#     def __init__(self, min_value: int, max_value: int):
+#         self.min_value = min_value
+#         self.max_value = max_value
+#
+#     def __set_name__(self, owner, name):
+#         self.param_name = '_' + name
+#
+#     def __get__(self, instance, owner):
+#         return 'ЦЫФРА'
+#
+#     def __set__(self, instance, value):
+#         setattr(instance, self.param_name, self._validate(value) + 10)
+#
+#     def _validate(self, value: int):
+#         if not value % 2:
+#             raise ValueError
+#         return value
+#
+#
+# class Rectangle:
+#     width = Value(10, 100)
+#     height = Value(10, 100)
+#
+#     def __init__(self, width: int, height: int):
+#         self.width = width
+#         self.height = height
+#
+#     @property
+#     def area(self):
+#         return self.width * self.height
+#
+#
+# a = Rectangle(11, 13)
+# print(a.__dict__)
+# print(a.area)
 

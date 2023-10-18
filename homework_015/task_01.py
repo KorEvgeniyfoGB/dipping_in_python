@@ -32,5 +32,5 @@ def collect_directory_info(directory_path: str):
 
 
 if __name__ == "__main__":
-    dir_path = input("Enter the directory path: ")
+    dir_path = input("Введите абсолютный путь до файла или директории: ")
     collect_directory_info(dir_path)

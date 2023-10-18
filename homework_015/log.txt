@@ -1,0 +1,2 @@
+INFO:root:FileInfo(name='log', extension='.txt', is_directory=False, parent_directory='homework_015')
+INFO:root:FileInfo(name='task_01', extension='.py', is_directory=False, parent_directory='homework_015')
